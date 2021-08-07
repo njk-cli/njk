@@ -17,16 +17,22 @@
 Install with [npm](https://npm.im/njk)
 
 ```sh
-npm i -g njk
+npm install --dev njk
 ```
 
-## Usages
+or with [yarn](https://yarn.pm/njk)
+
+```sh
+yarn add --dev njk
+```
+
+## Usage
 
 ```sh
 njk <files|dirs|globs> [options]
 ```
 
-## CLI Flags
+### Command Line Flags
 
 - **`-V`** prints version
 - **`-h or --help`** prints help text
@@ -36,13 +42,13 @@ njk <files|dirs|globs> [options]
 - **`-q or --quiet`** silences the output until any error occurs.
 - **`-w or --watch`** runs everything in watch mode. HTML is not minified in this mode.
 
-## CLI Options
+### Command Line Options
 
 - **`-d or --data`** pass either json file path of yaml directory path containing data.
 - **`-t or --template`** pass template directories (nunjucks searchPaths). Multiple template directories can be passed, separated by comma `,`
 - **`-o or --out`** pass output directory
 
-## File Options
+### File Specific Options
 
 Following options can be configured through front-matter of individual files.
 
@@ -57,9 +63,7 @@ You can help improving njk in following ways -
 - Found a bug, create an issue with relevant information.
 - Want a feature to be added, A pull request is always welcome.
 
----
-
-<h2>Examples</h2>
+<h2>Some Examples</h2>
 <details>
   <summary>
     <b>1. Rendering a template using block flag and layout option in front matter</b>
