@@ -3,7 +3,7 @@
   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mohitsinghs/njk/ci?style=flat-square&logo=github">
   <a href="https://www.npmjs.com/package/njk"><img src="https://img.shields.io/npm/v/njk.svg?style=flat-square&logo=npm" alt="npm version"></a>
   <img alt="node-current" src="https://img.shields.io/node/v/njk?style=flat-square&logo=nodedotjs">
-  <a href="https://github.com/mohitsinghs/njk/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square&logo=mit" alt="license MIT"></a>
+  <img alt="GitHub" src="https://img.shields.io/github/license/mohitsinghs/njk?style=flat-square">
 </p>
 <p align="center">
   <b>Render nunjucks templates with markdown and front-matter</b><br/>
