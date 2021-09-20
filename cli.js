@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const path = require('path')
-const cli = require('commander')
+const { program } = require('commander')
 const chokidar = require('chokidar')
 const chalk = require('chalk')
 const logger = require('./lib/logger')
@@ -8,7 +8,8 @@ const getData = require('./lib/get-data')
 const { isInside, getPaths, getTemplates } = require('./lib/utils')
 const api = require('./')
 
-cli
+program.storeOptionsAsProperties()
+program
   .version(
     chalk`
     {yellow njk}: ${require('./package.json').version}
@@ -37,20 +38,20 @@ cli
   })
   .parse(process.argv)
 
-const [files, rootPaths] = getPaths(cli.args)
-const templates = getTemplates(cli.template)
+const [files, rootPaths] = getPaths(program.args)
+const templates = getTemplates(program.template)
 
 const opts = {
-  verbose: cli.verbose,
-  block: cli.block,
-  clean: cli.clean,
-  quiet: cli.quiet,
-  data: getData(cli.data),
+  verbose: program.verbose,
+  block: program.block,
+  clean: program.clean,
+  quiet: program.quiet,
+  data: getData(program.data),
   rootPaths,
   templates,
-  out: cli.out,
-  watch: cli.watch,
-  minify: !cli.watch,
+  out: program.out,
+  watch: program.watch,
+  minify: !program.watch,
   minifyOpts: {
     collapseBooleanAttributes: true,
     collapseWhitespace: true,
@@ -65,7 +66,7 @@ api(files, opts)
 // list of files and directories to watch
 const watchList = []
 
-if (cli.watch) {
+if (program.watch) {
   watchList.push(...templates, ...rootPaths)
   // set up watcher and watch for file changes
   logger.log('Running in watch mode')
