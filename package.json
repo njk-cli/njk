@@ -45,7 +45,8 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.1",
-    "jest": "^27.2.3"
+    "jest": "^27.2.3",
+    "strip-ansi": "^7.0.1"
   },
   "jest": {
     "verbose": true,

@@ -1,5 +1,5 @@
 const baseOpts = {
-  rootPaths: ['/home/mohit/Projects/node/njk/tests/fixtures/'],
+  rootPaths: ['tests/fixtures/'],
   minify: false,
   block: true,
   out: 'dist',

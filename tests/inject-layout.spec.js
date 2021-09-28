@@ -28,7 +28,5 @@ it('should inject layout for a html without block', async () => {
 })
 
 it('should throw when no layout is found', async () => {
-  expect(() => injectLayout(noLayout, true)).toThrowError(
-    `No layout declared for [33mno-layout.md[39m`
-  )
+  expect(() => injectLayout(noLayout, true)).toThrowError()
 })

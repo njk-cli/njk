@@ -23,6 +23,6 @@ Object {
 </html>
 ",
   "isClean": true,
-  "path": "/home/mohit/Projects/node/njk/tests/fixtures/prose.md",
+  "path": "tests/fixtures/prose.md",
 }
 `;
