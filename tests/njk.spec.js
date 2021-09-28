@@ -32,5 +32,11 @@ it('should render multiple pages', async () => {
   ).toBeUndefined()
 
   expect(console.log).toBeCalledTimes(1)
-  expect(Object.fromEntries(fs.outputFile.mock.calls)).toMatchSnapshot()
+
+  expect(
+    Object.assign(
+      {},
+      ...Array.from(fs.outputFile.mock.calls, ([k, v]) => ({ [k]: v }))
+    )
+  ).toMatchSnapshot()
 })
