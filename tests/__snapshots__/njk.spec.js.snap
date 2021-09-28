@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render multiple pages 1`] = `
+Object {
+  "dist/about/index.html": "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"UTF-8\\"><title>Page Title</title></head><body><h1 id=\\"lorem-ipsum\\">Lorem ipsum</h1><p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p><p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p><blockquote><p>inventore enim alias sunt officia nostrum debitis ab</p></blockquote><pre><code class=\\"language-bash\\">asperiores est, quo libero?
+</code></pre><!-- The block name content is important --></body></html>",
+  "dist/prose/index.html": "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"UTF-8\\"><title>Page Title</title></head><body><header><h1>Special Recipe</h1></header><main><p>Use 5 tbsp of ketchup</p><p>Use 1 tbsp of mustard</p><p>Use 0 tbsp of pickle</p></main><footer><small>Copyright © The Food Chains.</small></footer><!-- The block name content is important --></body></html>",
+}
+`;
+
+exports[`should render single page 1`] = `
+Array [
+  "dist/prose/index.html",
+  "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"UTF-8\\"><title>Page Title</title></head><body><header><h1>Special Recipe</h1></header><main><p>Use 5 tbsp of ketchup</p><p>Use 1 tbsp of mustard</p><p>Use 0 tbsp of pickle</p></main><footer><small>Copyright © The Food Chains.</small></footer><!-- The block name content is important --></body></html>",
+]
+`;

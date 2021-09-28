@@ -1,0 +1,16 @@
+---
+layout: default
+clean: true
+---
+
+<header>
+  <h1>Special Recipe</h1>
+</header>
+<main>
+  {% for ingredient, amount in food %}
+  <p>Use {{ amount }} of {{ ingredient }}</p>
+  {% endfor %}
+</main>
+<footer>
+  <small>Copyright &copy; The Food Chains.</small>
+</footer>

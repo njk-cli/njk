@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should write a file with clean path 1`] = `
+Array [
+  "dist/prose/index.html",
+  "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"UTF-8\\"><title>Page Title</title></head><body><h1 id=\\"lorem-ipsum\\">Lorem ipsum</h1><p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p><p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p><blockquote><p>inventore enim alias sunt officia nostrum debitis ab</p></blockquote><pre><code class=\\"language-bash\\">asperiores est, quo libero?
+</code></pre><!-- The block name content is important --></body></html>",
+]
+`;
+
+exports[`should write a file without clean path 1`] = `
+Array [
+  "dist/prose.html",
+  "<!DOCTYPE html>
+<html lang=\\"en\\">
+<head>
+  <meta charset=\\"UTF-8\\">
+  <title>Page Title</title>
+</head>
+<body>
+  <h1 id=\\"lorem-ipsum\\">Lorem ipsum</h1>
+<p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p>
+<p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p>
+<blockquote>
+<p>inventore enim alias sunt officia nostrum debitis ab</p>
+</blockquote>
+<pre><code class=\\"language-bash\\">asperiores est, quo libero?
+</code></pre>
+
+  <!-- The block name content is important -->
+</body>
+</html>
+",
+]
+`;
