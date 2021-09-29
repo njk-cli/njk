@@ -1,5 +1,6 @@
-const getData = require('../lib/get-data')
-const injectData = require('../lib/inject-data')
+import { jest } from '@jest/globals'
+import getData from '../lib/get-data.js'
+import injectData from '../lib/inject-data.js'
 
 let fixtureData
 let mockExit

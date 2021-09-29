@@ -1,7 +1,8 @@
-const render = require('../lib/render')
-const write = require('../lib/write')
-const fs = require('fs-extra')
-const { renderOpts, baseOpts, minifyOpts } = require('./common')
+import { jest } from '@jest/globals'
+import fs from 'fs-extra'
+import render from '../lib/render.js'
+import write from '../lib/write.js'
+import { baseOpts, minifyOpts, renderOpts } from './common.js'
 
 let mockExit, rendered, renderedClean
 

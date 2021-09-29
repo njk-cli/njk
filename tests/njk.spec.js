@@ -1,5 +1,6 @@
-const njk = require('../lib/command')
-const fs = require('fs-extra')
+import { jest } from '@jest/globals'
+import fs from 'fs-extra'
+import njk from '../lib/command.js'
 
 const sample = 'tests/fixtures/example'
 
@@ -33,10 +34,5 @@ it('should render multiple pages', async () => {
 
   expect(console.log).toBeCalledTimes(1)
 
-  expect(
-    Object.assign(
-      {},
-      ...Array.from(fs.outputFile.mock.calls, ([k, v]) => ({ [k]: v }))
-    )
-  ).toMatchSnapshot()
+  expect(Object.fromEntries(fs.outputFile.mock.calls)).toMatchSnapshot()
 })

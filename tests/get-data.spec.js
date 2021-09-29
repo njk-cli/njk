@@ -1,4 +1,5 @@
-const getData = require('../lib/get-data')
+import { jest } from '@jest/globals'
+import getData from '../lib/get-data.js'
 
 let mockExit
 

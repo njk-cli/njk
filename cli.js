@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const command = require('./lib/command')
+import command from './lib/command.js'
 
 command(process.argv.slice(2))

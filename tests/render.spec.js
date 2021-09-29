@@ -1,5 +1,6 @@
-const render = require('../lib/render')
-const { renderOpts } = require('./common')
+import { jest } from '@jest/globals'
+import render from '../lib/render.js'
+import { renderOpts } from './common.js'
 
 let mockExit
 

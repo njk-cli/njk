@@ -1,6 +1,6 @@
-const getData = require('../lib/get-data')
-const injectData = require('../lib/inject-data')
-const injectLayout = require('../lib/inject-layout')
+import getData from '../lib/get-data.js'
+import injectData from '../lib/inject-data.js'
+import injectLayout from '../lib/inject-layout.js'
 
 let injectedMd, injectedHtml, noLayout
 
