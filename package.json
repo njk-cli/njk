@@ -29,16 +29,17 @@
   },
   "homepage": "https://github.com/mohitsinghs/njk#readme",
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
+    "chalk-template": "^0.2.0",
     "chokidar": "^3.5.2",
-    "commander": "8.2.0",
+    "commander": "8.3.0",
     "data-dir": "^1.2.5",
     "front-matter": "^4.0.2",
     "fs-extra": "^10.0.0",
     "globby": "12.0.2",
     "html-minifier": "^4.0.0",
     "lodash.merge": "^4.6.2",
-    "log-symbols": "5.0.0",
+    "log-symbols": "5.1.0",
     "marked": "^4.0.7",
     "nunjucks": "^3.2.3",
     "prefer-local": "^1.0.5"
@@ -46,7 +47,9 @@
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
-    "jest": "^27.4.4"
+    "ansi-styles": "^6.1.0",
+    "jest": "^27.4.4",
+    "supports-color": "^9.2.1"
   },
   "jest": {
     "transform": {},
@@ -55,6 +58,10 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "lib/*.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "#ansi-styles": "ansi-styles",
+      "#supports-color": "supports-color"
+    }
   }
 }
