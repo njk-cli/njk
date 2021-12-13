@@ -39,7 +39,7 @@
     "html-minifier": "^4.0.0",
     "lodash.merge": "^4.6.2",
     "log-symbols": "5.0.0",
-    "marked": "^3.0.4",
+    "marked": "^4.0.7",
     "nunjucks": "^3.2.3",
     "prefer-local": "^1.0.5"
   },
