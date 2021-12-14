@@ -12,6 +12,12 @@
 
 <br />
 
+## About
+
+**njk is in maintenance mode**. It was created more than four years ago to help me migrate from Jekyll.
+It served it's purpose very well but since then, I've migrated almost all of my sites to use other
+tools and I no longer use njk. I've added tests to make sure deps upgrade don't render it useless.
+
 ## Install
 
 Install with [npm](https://npm.im/njk)
