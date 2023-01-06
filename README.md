@@ -1,6 +1,6 @@
 <h1 align="center">njk</h1>
 <p align="center">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mohitsinghs/njk/ci?style=flat-square&logo=github">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mohitsinghs/njk/main.yml?style=flat-square&logo=github">
   <a href="https://www.npmjs.com/package/njk"><img src="https://img.shields.io/npm/v/njk.svg?style=flat-square&logo=npm" alt="npm version"></a>
   <img alt="node-current" src="https://img.shields.io/node/v/njk?style=flat-square&logo=nodedotjs">
   <img alt="GitHub" src="https://img.shields.io/github/license/mohitsinghs/njk?style=flat-square">
