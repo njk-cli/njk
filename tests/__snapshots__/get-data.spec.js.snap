@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should read a directory with mixed data 1`] = `
-Object {
-  "lotr": Array [
+{
+  "lotr": [
     "dwarfs",
     "elf",
     "hobbits",
     "wizards",
   ],
-  "penguins": Array [
+  "penguins": [
     "skipper",
     "kowalski",
     "rico",
@@ -18,7 +18,7 @@ Object {
 `;
 
 exports[`should read a file 1`] = `
-Object {
+{
   "age": "349",
   "name": "Alex",
 }

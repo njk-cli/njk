@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render for a markdown with block 1`] = `
-Object {
+{
   "content": "<!DOCTYPE html>
-<html lang=\\"en\\">
+<html lang="en">
 <head>
-  <meta charset=\\"UTF-8\\">
+  <meta charset="UTF-8">
   <title>Page Title</title>
 </head>
 <body>
-  <h1 id=\\"lorem-ipsum\\">Lorem ipsum</h1>
+  <h1 id="lorem-ipsum">Lorem ipsum</h1>
 <p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p>
 <p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p>
 <blockquote>
 <p>inventore enim alias sunt officia nostrum debitis ab</p>
 </blockquote>
-<pre><code class=\\"language-bash\\">asperiores est, quo libero?
+<pre><code class="language-bash">asperiores est, quo libero?
 </code></pre>
 
   <!-- The block name content is important -->
