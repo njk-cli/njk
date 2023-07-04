@@ -30,6 +30,6 @@ it('should fail with exit for wrong file', async () => {
   expect(
     await injectData('tests/fixtures/prose.htm', fixtureData)
   ).toBeUndefined()
-  expect(mockExit).toBeCalledWith(1)
-  expect(console.error).toBeCalledTimes(1)
+  expect(mockExit).toHaveBeenCalledWith(1)
+  expect(console.error).toHaveBeenCalledTimes(1)
 })

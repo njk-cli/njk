@@ -25,7 +25,8 @@ exports[`should be okay without front-matter or data 1`] = `
 
 exports[`should parse html with data 1`] = `
 {
-  "content": "<h1 id="lorem-ipsum">Lorem ipsum</h1>
+  "content": "
+<h1 id="lorem-ipsum">Lorem ipsum</h1>
 <p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p>
 <p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p>
 <blockquote>

@@ -26,7 +26,7 @@ it('should write a file with clean path', async () => {
       minifyOpts,
     })
   ).toBe('dist/prose/index.html')
-  expect(fs.ensureDir).toBeCalledWith('dist')
+  expect(fs.ensureDir).toHaveBeenCalledWith('dist')
   expect(fs.outputFile.mock.calls[0]).toMatchSnapshot()
 })
 
@@ -37,7 +37,7 @@ it('should write a file without clean path', async () => {
       minify: false,
     })
   ).toBe('dist/prose.html')
-  expect(fs.ensureDir).toBeCalledWith('dist')
+  expect(fs.ensureDir).toHaveBeenCalledWith('dist')
   expect(fs.outputFile.mock.calls[0]).toMatchSnapshot()
 })
 it('should error when write fails', async () => {
@@ -45,6 +45,6 @@ it('should error when write fails', async () => {
     Promise.reject(new Error('failed to write'))
   )
   expect(await write(rendered, { ...baseOpts, minify: false })).toBeUndefined()
-  expect(mockExit).toBeCalledWith(1)
-  expect(console.error).toBeCalledTimes(1)
+  expect(mockExit).toHaveBeenCalledWith(1)
+  expect(console.error).toHaveBeenCalledTimes(1)
 })

@@ -26,4 +26,4 @@ const resultInput = [
   Promise.resolve('dist/blog/index.html'),
 ]
 
-export { baseOpts, renderOpts, minifyOpts, resultInput }
+export { baseOpts, minifyOpts, renderOpts, resultInput }

@@ -19,7 +19,7 @@ it('should render single page', async () => {
     )
   ).toBeUndefined()
 
-  expect(console.log).toBeCalledTimes(3)
+  expect(console.log).toHaveBeenCalledTimes(3)
   expect(fs.outputFile.mock.calls[0]).toMatchSnapshot()
 })
 
@@ -32,7 +32,7 @@ it('should render multiple pages', async () => {
     )
   ).toBeUndefined()
 
-  expect(console.log).toBeCalledTimes(1)
+  expect(console.log).toHaveBeenCalledTimes(1)
 
   expect(Object.fromEntries(fs.outputFile.mock.calls)).toMatchSnapshot()
 })

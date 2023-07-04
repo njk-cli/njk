@@ -2,7 +2,8 @@
 
 exports[`should inject layout for a html without block 1`] = `
 {
-  "content": "{% extends "special.njk" %} <h1 id="lorem-ipsum">Lorem ipsum</h1>
+  "content": "{% extends "special.njk" %} 
+<h1 id="lorem-ipsum">Lorem ipsum</h1>
 <p>dolor sit amet consectetur adipisicing elit. Doloribus, quam. Dicta amet</p>
 <p>omnis <strong>accusamus</strong> doloribus sequi laboriosam quaerat</p>
 <blockquote>

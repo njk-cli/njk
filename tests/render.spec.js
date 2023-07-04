@@ -23,7 +23,7 @@ it('should throw for rendering errors', async () => {
       ...renderOpts,
       templates: ['tests/fix'],
     })
-  ).rejects.toThrowError(`(unknown path)
+  ).rejects.toThrow(`(unknown path)
   Error: template not found: default.njk`)
 })
 
