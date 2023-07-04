@@ -1,6 +1,6 @@
 {
   "name": "njk",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "CLI tool to render nunjucks with markdown and front-matter",
   "type": "module",
   "exports": "./lib/main.js",
