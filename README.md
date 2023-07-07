@@ -14,9 +14,9 @@
 
 ## About
 
-**njk is in maintenance mode**. It was created more than four years ago to help me migrate from Jekyll.
-It served it's purpose very well but since then, I've migrated almost all of my sites to use other
-tools and I no longer use njk. I've added tests to make sure deps upgrade don't render it useless.
+**njk is no longer maintained**. It was created in 2017 as a command line tool to help me migrate from Jekyll.
+It served it's purpose well for me, but since then, I've migrated almost all of my sites to use other
+tools. And for all those repositories using it as a library along with nunjucks and express, 🫡
 
 ## Install
 
